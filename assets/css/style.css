@@ -5,7 +5,7 @@
  
  body {
      background: #599fd9;
-     background: url(/assets/img/Background.jpeg) no-repeat center center fixed;
+     background: url(./assets/img/Background.jpeg) no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
