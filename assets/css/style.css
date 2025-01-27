@@ -1,8 +1,5 @@
  @import url(https://kit.fontawesome.com/8936e4ca13.js);
- * {
-     font-family: 'Comic Sans MS', cursive;
- }
- 
+
  body {
      background: #599fd9;
      background: url(https://i.postimg.cc/BZm9pQrZ/Background.jpg) no-repeat center center fixed;
@@ -13,7 +10,7 @@
      width: 100%;
      overflow-x: hidden;
  }
- 
+
  #navbar {
      position: fixed;
      margin: 0;
@@ -23,7 +20,7 @@
      /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); */
      transition: all 0.4s;
  }
- 
+
  .vertical-nav {
      height: 100vh;
      width: 280px;
@@ -31,156 +28,77 @@
      margin-left: 50px;
      overflow-y: auto;
  }
- 
+
  .navbar {
      overflow: hidden;
  }
- 
+
  #Links a {
      color: black;
  }
- 
+
  #Links a:focus {
      color: white;
      background-color: black;
      transition: 0.5s;
  }
- 
+
  #Links a:hover {
      color: white;
      background-color: black;
      transition: 0.5s;
  }
- 
+
  ::-webkit-scrollbar {
      display: none;
  }
- 
+
  ::-moz-scrollbar {
      display: none;
  }
- 
+
  .page-content {
      width: calc(100% - 17rem);
      margin-left: 21rem;
      transition: all 0.4s;
  }
- 
+
  .section-heading {
      text-align: center;
      padding: 5px 45px;
  }
- 
+
  .section-heading h2 {
      font-size: 32px;
      font-weight: 700;
      color: #fff;
  }
- 
+
  .section-heading .line-dec {
      width: 60px;
      height: 3px;
      background-color: lime;
      margin: 10px auto;
  }
- 
+
  .section-heading span {
      margin-top: 5px;
      font-size: 16px;
      color: #fff;
      letter-spacing: 0.5px;
  }
- 
+
  @media (max-width: 768px) {
      #content {
          width: 100%;
          margin: 0;
      }
+
      .vertical-nav {
          margin-left: -10px;
      }
+
      .section-heading {
          padding: 0px 0px;
      }
  }
- /* body {
-     background: #599fd9;
-     background-image: linear-gradient(135.9deg, rgba(109, 25, 252, 1) 16.4%, rgba(125, 31, 165, 1) 56.1%);
-     min-height: 100vh;
-     overflow-x: hidden;
- }
- #backImg {
-     background: url(/assets/img/Background.jpeg) no-repeat center center fixed;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     width: 100%;
-     overflow-x: hidden;
- }
- 
- .vertical-nav {
-     min-width: 17rem;
-     width: 17rem;
-     height: 100vh;
-     position: fixed;
-     top: 0;
-     left: 0;
-     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-     transition: all 0.4s;
- }
- 
- .page-content {
-     width: calc(100% - 17rem);
-     margin-left: 17rem;
-     transition: all 0.4s;
- }
- 
- #sidebar.active {
-     margin-left: -17rem;
- }
- 
- #content.active {
-     width: 100%;
-     margin: 0;
- }
- 
- .separator {
-     margin: 3rem 0;
-     border-bottom: 1px dashed #fff;
- }
- 
- .text-uppercase {
-     letter-spacing: 0.1rem;
- }
- 
- .nav-link {
-     text-transform: capitalize;
- }
- 
- .nav-item a:hover {
-     background: #f3f2f2;
- }
- 
- .close {
-     display: none;
- }
- 
- @media (max-width: 768px) {
-     #sidebar {
-         margin-left: -17rem;
-     }
-     #sidebar.active {
-         margin-left: 0;
-     }
-     #content {
-         width: 100%;
-         margin: 0;
-     }
-     #content.active {
-         margin-left: 17rem;
-     }
-     .close {
-         display: flex;
-     }
- } */
