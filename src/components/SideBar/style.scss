@@ -1,0 +1,20 @@
+#side-bar-container {
+    .side-bar {
+        box-shadow: #77777740 0px 0px 60px 14px inset, #0000004d 0px 18px 36px -18px inset;
+
+        .menus {
+            li {
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                }
+
+                &.active {
+                    color: white;
+                }
+            }
+        }
+    }
+}
