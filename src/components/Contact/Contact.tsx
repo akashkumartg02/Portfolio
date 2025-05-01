@@ -1,25 +1,25 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef<any>(null);
 
     const sendEmail = (e: any) => {
-        // e.preventDefault();
+        e.preventDefault();
 
-        // emailjs.sendForm('service_qs9ta1q', 'template_lblf0uc', form.current, {
-        //         publicKey: 'Djq_PRjC1Aj5vxcEV',
-        //     })
-        //     .then(
-        //         () => {
-        //             console.log('SUCCESS!');
-        //         },
-        //         (error) => {
-        //             console.log('FAILED...', error.text);
-        //         },
-        //     );
+        emailjs.sendForm('service_qs9ta1q', 'template_lblf0uc', form.current, {
+            publicKey: 'Djq_PRjC1Aj5vxcEV',
+        })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
 
     return (
