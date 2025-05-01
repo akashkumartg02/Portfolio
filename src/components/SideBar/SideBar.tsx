@@ -9,6 +9,7 @@ const SideBar = () => {
         <div id="side-bar-container" className="fixed w-90 h-screen left-0 top-0 p-6">
             <div className="absolute w-[1px] bg-lime-500 rounded right-0 top-1/2 translate-y-[-50%] h-40 opacity-80"></div>
             <div className="rounded-4xl shadow-amber-50 w-full h-full side-bar relative">
+                <span className="animated-line" />
                 {/* <h1 className="text-lime-500 text-4xl font-bold absolute top-20 left-27 transform -translate-x-1/2 -translate-y-1/2">AK</h1> */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <ul className="menus text-[gray] text-[22px] font-medium w-max">

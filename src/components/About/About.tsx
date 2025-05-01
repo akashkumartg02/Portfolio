@@ -1,8 +1,13 @@
 import './style.scss';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div id="about" className="mt-20 pb-10">
+        <motion.section id="about" className="mt-20 pb-10"
+            initial={{ opacity: 0, marginLeft: -40 }}
+            whileInView={{ opacity: 1, marginLeft: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            viewport={{ once: true }}>
             <div className="bg-[#ffffff0a] text-xs p-2 inline">ABOUT</div>
 
             <h1 className="mt-5 text-[30px] font-medium text-white">About Me</h1>
@@ -174,7 +179,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.section>
     )
 }
 

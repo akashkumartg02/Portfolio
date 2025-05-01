@@ -3,6 +3,8 @@ import Home from '../Home';
 import './style.scss';
 import About from '../About/About';
 import Work from '../Work/Work';
+import Skills from '../Skills/Skills';
+import Contact from '../Contact/Contact';
 
 const Main = () => {
     const { hash } = useLocation();
@@ -13,9 +15,11 @@ const Main = () => {
             marginLeft: '360px'
         }}>
             <div className='max-w-[750px] m-auto'>
-                {hash === '#home' && <Home />}
+                {(!hash || (hash === '#home')) && <Home />}
                 {hash === '#about' && <About />}
                 {hash === '#work' && <Work />}
+                {hash === '#skills' && <Skills />}
+                {hash === '#contact' && <Contact />}
             </div>
         </div>
     )

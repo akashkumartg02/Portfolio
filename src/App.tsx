@@ -1,7 +1,6 @@
 import SideBar from "./components/SideBar/SideBar";
 import Main from "./components/Main/Main";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 const App = () => {
   const [refreshWidth, setRefreshWidth] = useState(false);
@@ -42,13 +41,13 @@ const App = () => {
 
 
   return (
-    <motion.div className="flex w-full h-full relative" onMouseMove={handleMouseMove}>
-      <div className="w-7 h-7 border border-lime-500 rounded-full absolute z-auto bg-transparent" style={{
+    <div className="flex w-full h-full relative" onMouseMove={handleMouseMove}>
+      <div className="w-7 h-7 border border-lime-500 rounded-full fixed z-auto bg-transparent" style={{
         top: `${outerBorderTop - 14}px`,
         left: `${outerBorderLeft - 14}px`,
         transition: 'top .08s ease-out, left .08s ease-out'
       }}></div>
-      <div className="w-1 h-1 bg-white rounded-full absolute z-auto" style={{
+      <div className="w-1 h-1 bg-white rounded-full fixed z-auto" style={{
         top: `${innerBorderTop - 2}px`,
         left: `${innerBorderLeft - 2}px`,
         transition: 'top .08s ease-out, left .08s ease-out'
@@ -59,7 +58,7 @@ const App = () => {
       <div className={`open-door fixed top-0 right-0 h-screen bg-white w-1/2 ${refreshWidth ? 'refresh-width' : ''}`}></div>
       {!refreshWidth && <div className={`center-line fixed bottom-1/2 left-1/2 w-[1px] bg-black ${refresLine ? 'h-[50vh] top-0' : 'top-1/2 h-[0vh]'}`}></div>}
       {!refreshWidth && <div className={`center-line fixed top-1/2 left-1/2 w-[1px] bg-black ${refresLine ? 'h-[50vh] bottom-0' : 'h-[0vh]'}`}></div>}
-    </motion.div>
+    </div>
   );
 }
 

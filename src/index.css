@@ -15,13 +15,6 @@ body {
     color: #9b9b9b;
 }
 
-/* 
-.rowdies-font {
-    font-family: "Rowdies", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-} */
-
 .open-door {
     transition: width 0.5s ease;
 }

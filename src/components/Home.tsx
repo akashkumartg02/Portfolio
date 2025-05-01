@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 const Home = () => {
     return (
-        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-max'>
+        <motion.section className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-max'
+            initial={{ opacity: 0, marginLeft: -40 }}
+            whileInView={{ opacity: 1, marginLeft: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            viewport={{ once: true }}>
             <div className="avatar w-[220px] h-[220px] rounded-full relative" data-type="wave">
                 <div className="image absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="src/assets/profile.jpg" style={{ backgroundImage: 'url("/profile.jpg")' }}>
                 </div>
@@ -15,7 +21,7 @@ const Home = () => {
                     <a href="https://x.com/Akash_Kumar_02" target='_black'><img src="/x.svg" alt="X" className='w-5 h-5' /></a>
                 </div>
             </div>
-        </div>
+        </motion.section>
     )
 }
 

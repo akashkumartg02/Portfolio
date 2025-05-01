@@ -1,1 +1,115 @@
-#work {}
+#work {
+
+    .work-container {
+        &:hover {
+            .number {
+                background-color: #ffffff14;
+            }
+
+            .read-more {
+                a {
+                    &::before {
+                        transform-origin: 108.95px 0.499132px;
+                        animation: read-more-anim-2;
+                        animation-fill-mode: forwards;
+                        animation-duration: .4s;
+                        animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+                    }
+
+                    span {
+                        transform: translateX(0%);
+                    }
+                }
+            }
+        }
+
+        .read-more {
+            position: relative;
+            float: left;
+            clear: both;
+            height: auto;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 10px;
+
+            a {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                padding-right: 32px;
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background-color: #ffffff;
+                    margin: auto;
+                    width: 100%;
+                    height: 1px;
+                    top: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    transform: scaleX(0.2);
+                    transform-origin: 0px 0.499132px;
+                    animation: read-more-anim;
+                    animation-fill-mode: forwards;
+                    animation-duration: .4s;
+                    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+                }
+
+                span {
+                    display: inline-block;
+                    position: relative;
+                    color: white;
+                    z-index: 1;
+                    transition: .6s cubic-bezier(.6, .01, 0, 1);
+                    transform: translateX(-110%);
+                }
+            }
+        }
+    }
+}
+
+@keyframes read-more-anim {
+    0% {
+        transform-origin: right center;
+        transform: scaleX(.2);
+    }
+
+    70% {
+        transform-origin: right center;
+    }
+
+    71% {
+        transform-origin: left center;
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform-origin: left center;
+        transform: scaleX(.2);
+    }
+}
+
+@keyframes read-more-anim-2 {
+    0% {
+        transform-origin: left center;
+        transform: scaleX(.2);
+    }
+
+    70% {
+        transform-origin: left center;
+        transform: scaleX(1);
+    }
+
+    71% {
+        transform-origin: right center;
+    }
+
+    100% {
+        transform-origin: right center;
+        transform: scaleX(.2);
+    }
+}
