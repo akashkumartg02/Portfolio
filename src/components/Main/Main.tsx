@@ -7,8 +7,6 @@ import Contact from '../Contact/Contact';
 import './style.scss';
 
 const Main = () => {
-    // const { hash } = useLocation();
-
     return (
         <div id="main" className="relative h-screen px-6" style={{
             width: 'calc(100% - 360px)',
@@ -22,11 +20,6 @@ const Main = () => {
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
-                {/* {(!hash || (hash === '#home')) && <Home />}
-                {hash === '#about' && <About />}
-                {hash === '#work' && <Work />}
-                {hash === '#skills' && <Skills />}
-                {hash === '#contact' && <Contact />} */}
             </div>
         </div>
     )

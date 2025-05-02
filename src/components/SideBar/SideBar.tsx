@@ -15,7 +15,7 @@ const SideBar = () => {
     const Navigations = () => {
         return (
             <ul className="menus text-[gray] text-[22px] font-medium w-max" >
-                <li className={pathname === '/home' ? 'active' : ''} onClick={() => handleNavigate('')}>Home</li>
+                <li className={pathname === '/' ? 'active' : ''} onClick={() => handleNavigate('')}>Home</li>
                 <li className={pathname === '/about' ? 'active' : ''} onClick={() => handleNavigate('about')}>About</li>
                 <li className={pathname === '/work' ? 'active' : ''} onClick={() => handleNavigate('work')}>My Work</li>
                 <li className={pathname === '/skills' ? 'active' : ''} onClick={() => handleNavigate('skills')}>What I'm Good At</li>
