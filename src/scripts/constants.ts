@@ -10,7 +10,8 @@ const APP_CONSTANTS = {
                 'Continuously improved the platform with innovative features based on user feedback and requirements.',
                 'Enhanced the platform with custom domain support to allow users to personalize their blog URLs.',
                 'Optimized the editor experience to provide a smooth and intuitive writing experience.'
-            ]
+            ],
+            link: 'https://app.thyquill.com'
         },
         {
             title: 'CMDK',
@@ -22,7 +23,8 @@ const APP_CONSTANTS = {
                 'Offered real-time indexing and search optimization for enhanced performance.',
                 'Ensured secure and scalable implementation to efficiently handle large datasets.',
                 'Delivered analytics and insights to track search performance and user engagement.'
-            ]
+            ],
+            link: ''
         },
         {
             title: 'Vision Mobile',
@@ -34,7 +36,8 @@ const APP_CONSTANTS = {
                 'Optimized responsiveness and performance to ensure a seamless experience across various devices.',
                 'Focused on UI/UX best practices to deliver a polished presentation for mobile shopping.',
                 'Developed the project as a demonstration of frontend skills using modern web technologies.'
-            ]
+            ],
+            link: 'https://visionmobile.netlify.app/'
         },
         {
             title: 'Tasty Tasty',
@@ -46,7 +49,8 @@ const APP_CONSTANTS = {
                 'Implemented a smooth checkout experience with support for dynamic cart updates and order tracking.',
                 'Ensured scalability and maintainability to support future product expansion and traffic growth.',
                 'Delivered a complete online shopping platform tailored to the needs of a traditional food brand.'
-            ]
+            ],
+            link: 'https://tttastytasty.com'
         },
         {
             title: 'TT Masala',
@@ -58,7 +62,8 @@ const APP_CONSTANTS = {
                 'Provided detailed company information, including ISO 9001:2015 certified manufacturing facilities in Manalur, Tamil Nadu.',
                 'Communicated the brand\'s mission to deliver "Tasty" and "Healthy" food products to a broad consumer base.',
                 'Integrated external links for purchasing products via Amazon and Flipkart, enhancing user accessibility to TT Masala offerings.'
-            ]
+            ],
+            link: 'https://mr-akash2.github.io/TT_Masala_/'
         },
         {
             title: 'Landing AK',
@@ -70,7 +75,8 @@ const APP_CONSTANTS = {
                 'Integrated a clean layout and modern UI to create a visually appealing web presence.',
                 'Included a dedicated contact section to facilitate networking and collaboration opportunities.',
                 'Utilized the project to demonstrate frontend proficiency and attention to design detail.'
-            ]
+            ],
+            link: 'https://landing-ak.netlify.app/'
         },
     ],
     SKILLS: [

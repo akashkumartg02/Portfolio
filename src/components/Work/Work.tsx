@@ -48,6 +48,9 @@ const Work = () => {
                 {project.content.map((content: string, key: number) => {
                     return <p key={key} className='text-sm mt-2'>{content}</p>
                 })}
+                {project.link && <div className="bg-white inline-block px-6 py-2 mt-4">
+                    <a href={project.link} className="text-black" target='_blank'><span>View</span></a>
+                </div>}
             </Modal>}
         </motion.section>
     )
