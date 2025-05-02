@@ -37,10 +37,12 @@ const SideBar = () => {
                 </div>
             </div>
 
-            <div id="side-menu-btn" className="fixed top-6 right-6 bg-[#ffffff0a] p-2 cursor-pointer z-10 hover:bg-[#ffffff14]" onClick={() => setOpen(true)}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-white">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+            <div id="side-menu-btn" className="fixed top-0 left-0 bg-[#222222] w-full z-10 px-6 py-2">
+                <div className="bg-[#ffffff0a] p-2 cursor-pointer float-right inline-block hover:bg-[#ffffff14]" onClick={() => setOpen(true)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-white">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
             </div>
 
             <div id="side-popup">

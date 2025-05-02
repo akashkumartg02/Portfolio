@@ -1,10 +1,10 @@
 import { useLocation } from 'react-router-dom';
 import Home from '../Home/Home';
-import './style.scss';
 import About from '../About/About';
 import Work from '../Work/Work';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
+import './style.scss';
 
 const Main = () => {
     const { hash } = useLocation();

@@ -24,7 +24,9 @@ const Skills = () => {
                                 <p className='text-white'>{skill.level}</p>
                             </div>
                             <div className="bg-[#ffffff0a] w-full h-[2px] mt-2">
-                                <div className={`bg-white w-[${skill.level}] h-[2px]`}></div>
+                                <div className={`bg-white h-[2px]`} style={{
+                                    width: skill.level
+                                }}></div>
                             </div>
                         </div>
                     );

@@ -22,7 +22,7 @@ const Work = () => {
             {/* <hr className="my-6 text-lime-500 opacity-60" /> */}
 
             <div className="mt-10">
-                <div className="w-full h-auto grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10">
+                <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10">
                     {APP_CONSTANTS.MY_WORKS.map((work: { title: string, description: string }, key: number) => {
                         return (
                             <div key={key} onClick={() => {
@@ -33,9 +33,9 @@ const Work = () => {
                                 <h2 className='text-white'>{work.title}</h2>
                                 <p className='line-clamp-4 text-sm mt-2'>{work.description}</p>
                                 <div className="read-more">
-                                    <a href="#">
+                                    <div>
                                         <span>Read More</span>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         )

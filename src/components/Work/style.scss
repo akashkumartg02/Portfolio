@@ -7,7 +7,7 @@
             }
 
             .read-more {
-                a {
+                div {
                     &::before {
                         transform-origin: 108.95px 0.499132px;
                         animation: read-more-anim-2;
@@ -32,7 +32,7 @@
             overflow: hidden;
             margin-top: 10px;
 
-            a {
+            div {
                 position: relative;
                 display: inline-block;
                 overflow: hidden;
