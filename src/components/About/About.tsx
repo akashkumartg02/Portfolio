@@ -15,7 +15,7 @@ const About = () => {
             <div className="mt-10">
                 <img src="/profile2.jpg" alt="profile2" className="w-full h-[400px] object-cover opacity-70" />
                 <h3 className="font-bold text-[22px] tracking-[2px] rowdies-font mt-6 text-white">Akash <span className="ml-2">Kumar</span></h3>
-                <h3 className="font-light text-3xl text-[15px] w-90">Front-end developer</h3>
+                <h3 className="font-light text-3xl text-[15px]">Front-end developer</h3>
             </div>
 
             <hr className="my-6 text-lime-500 opacity-60" />
