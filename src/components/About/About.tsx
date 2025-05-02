@@ -86,7 +86,7 @@ const About = () => {
             <hr className="my-6 text-lime-500 opacity-60" />
 
             <div className="bg-white inline-block px-6 py-3">
-                <a href="assets/img/cv/1.jpg" className="text-black" download=""><span>Download CV</span></a>
+                <a href="/Akash_Resume.pdf" className="text-black" download><span>Download CV</span></a>
             </div>
 
             <hr className="my-6 text-lime-500 opacity-60" />

@@ -1,25 +1,25 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import "./style.scss";
 import { useState } from "react";
+import "./style.scss";
 
 const SideBar = () => {
-    const { hash } = useLocation();
+    const { pathname } = useLocation();
     const navigate = useNavigate();
     const [open, setOpen] = useState(false);
 
     const handleNavigate = (path: string) => {
-        navigate(`#${path}`);
+        navigate(`/${path}`);
         setOpen(false);
     }
 
     const Navigations = () => {
         return (
             <ul className="menus text-[gray] text-[22px] font-medium w-max" >
-                <li className={(!hash || (hash === '#home')) ? 'active' : ''} onClick={() => handleNavigate('home')}>Home</li>
-                <li className={hash === '#about' ? 'active' : ''} onClick={() => handleNavigate('about')}>About</li>
-                <li className={hash === '#work' ? 'active' : ''} onClick={() => handleNavigate('work')}>My Work</li>
-                <li className={hash === '#skills' ? 'active' : ''} onClick={() => handleNavigate('skills')}>What I'm Good At</li>
-                <li className={hash === '#contact' ? 'active' : ''} onClick={() => handleNavigate('contact')}>Contact Me</li>
+                <li className={pathname === '/home' ? 'active' : ''} onClick={() => handleNavigate('')}>Home</li>
+                <li className={pathname === '/about' ? 'active' : ''} onClick={() => handleNavigate('about')}>About</li>
+                <li className={pathname === '/work' ? 'active' : ''} onClick={() => handleNavigate('work')}>My Work</li>
+                <li className={pathname === '/skills' ? 'active' : ''} onClick={() => handleNavigate('skills')}>What I'm Good At</li>
+                <li className={pathname === '/contact' ? 'active' : ''} onClick={() => handleNavigate('contact')}>Contact Me</li>
             </ul>
         )
     }
@@ -30,18 +30,21 @@ const SideBar = () => {
                 <div className="absolute w-[1px] bg-lime-500 rounded right-0 top-1/2 translate-y-[-50%] h-40 opacity-80"></div>
                 <div className="rounded-4xl shadow-amber-50 w-full h-full side-bar relative">
                     <span className="animated-line" />
-                    {/* <h1 className="text-lime-500 text-4xl font-bold absolute top-20 left-27 transform -translate-x-1/2 -translate-y-1/2">AK</h1> */}
+                    <h1 className="logo bg-lime-500 text-[#222222] text-2xl font-bold absolute top-20 left-22 transform -translate-x-1/2 -translate-y-1/2 border border-[var(--primary)]">AK</h1>
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <Navigations />
                     </div>
                 </div>
             </div>
 
-            <div id="side-menu-btn" className="fixed top-0 left-0 bg-[#222222] w-full z-10 px-6 py-2">
-                <div className="bg-[#ffffff0a] p-2 cursor-pointer float-right inline-block hover:bg-[#ffffff14]" onClick={() => setOpen(true)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-white">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
+            <div id="side-menu-btn" className="fixed top-0 left-0 bg-[#222222] w-full z-10 px-6 py-4">
+                <div className="flex justify-between items-center">
+                    <h1 className="logo bg-lime-500 text-[#222222] text-2xl font-bold border border-[var(--primary)]">AK</h1>
+                    <div className="bg-[#ffffff0a] p-2 cursor-pointer inline-block hover:bg-[#ffffff14]" onClick={() => setOpen(true)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-white">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
                 </div>
             </div>
 
