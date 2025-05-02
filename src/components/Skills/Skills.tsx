@@ -15,7 +15,7 @@ const Skills = () => {
 
             {/* <hr className="my-6 text-lime-500 opacity-60" /> */}
 
-            <div className="w-full h-auto grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-10">
+            <div className="w-full h-auto grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-10">
                 {APP_CONSTANTS.SKILLS.map((skill: { skill: string, level: string }, key: number) => {
                     return (
                         <div className='' key={key}>

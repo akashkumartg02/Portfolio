@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import Home from '../Home';
+import Home from '../Home/Home';
 import './style.scss';
 import About from '../About/About';
 import Work from '../Work/Work';
@@ -14,7 +14,7 @@ const Main = () => {
             width: 'calc(100% - 360px)',
             marginLeft: '360px'
         }}>
-            <div className='max-w-[750px] m-auto'>
+            <div className='max-w-[750px] w-full m-auto relative h-screen'>
                 {(!hash || (hash === '#home')) && <Home />}
                 {hash === '#about' && <About />}
                 {hash === '#work' && <Work />}

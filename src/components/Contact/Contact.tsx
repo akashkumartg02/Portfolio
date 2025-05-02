@@ -34,16 +34,16 @@ const Contact = () => {
 
             <form ref={form} onSubmit={sendEmail}>
                 <div className="mt-6">
-                    <input aria-label='name' placeholder='Name' className='border border-[#ffffff0a] w-full p-2' type="text" name="name" required />
+                    <input aria-label='name' placeholder='Name' className='border border-[#ffffff0a] w-full p-2 focus-visible:outline-0 focus-visible:border-[var(--primary)] hover:border-[var(--primary)]' type="text" name="name" required />
                 </div>
                 <div className="mt-6">
-                    <input aria-label='email' placeholder='Email' className='border border-[#ffffff0a] w-full p-2' type="email" name="email" required />
+                    <input aria-label='email' placeholder='Email' className='border border-[#ffffff0a] w-full p-2 focus-visible:outline-0 focus-visible:border-[var(--primary)] hover:border-[var(--primary)]' type="email" name="email" required />
                 </div>
                 <div className="mt-6">
-                    <textarea aria-label='message' placeholder='Message' className='border border-[#ffffff0a] w-full p-2' name="message" required />
+                    <textarea aria-label='message' placeholder='Message' className='border border-[#ffffff0a] w-full p-2 min-h-50 focus-visible:outline-0 focus-visible:border-[var(--primary)] hover:border-[var(--primary)]' name="message" required />
                 </div>
                 <div className='mt-6'>
-                    <button type="submit" className='bg-white text-black px-6 py-3'>Send Message</button>
+                    <button type="submit" className='bg-white text-black px-6 py-3 cursor-pointer'>Send Message</button>
                 </div>
             </form>
 

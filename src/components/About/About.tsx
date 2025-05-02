@@ -25,7 +25,7 @@ const About = () => {
 
             <hr className="my-6 text-lime-500 opacity-60" />
 
-            <div className="w-full h-auto grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+            <div className="w-full h-auto grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                 <div className="w-full pr-[50px]">
                     <div className="w-full h-auto">
                         <ul className="m-0 list-none">
@@ -92,7 +92,7 @@ const About = () => {
             <hr className="my-6 text-lime-500 opacity-60" />
 
             <div className="pt-2">
-                <div className="w-full h-auto grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+                <div className="w-full h-auto grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
                     <div className="w-full">
                         <div className="w-full h-auto mb-[40px]">
                             <h3 className="text-[20px] font-bold">Education</h3>

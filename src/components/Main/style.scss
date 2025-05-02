@@ -1,32 +1,6 @@
-#main {
-    .avatar {
-        .image {
-            background-blend-mode: multiply;
-            box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 9px inset;
-            animation: 5s ease-in-out 1s infinite normal none running morph;
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-        }
-    }
-}
-
-@keyframes morph {
-    0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30%;
-    }
-
-    100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30%;
-    }
-
-    0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+@media (min-width: 0px) and (max-width: 995px) {
+    #main {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }
