@@ -46,8 +46,8 @@ const SideBar = () => {
             </div>
 
             <div id="side-popup">
-                {open && <div className="bg-[#000c] w-screen h-screen z-10 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" onClick={() => setOpen(false)} />}
-                <div className={`fixed top-0 right-0 bg-[#34353a] transition-[width,padding] duration-[300ms] ease-out ${open ? 'w-[200px] p-6' : 'w-0 p-0'} h-screen z-10`}>
+                {open && <div className="bg-[#000c] w-screen h-screen z-40 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" onClick={() => setOpen(false)} />}
+                <div className={`fixed top-0 right-0 bg-[#34353a] transition-[width,padding] duration-[300ms] ease-out ${open ? 'w-[200px] p-6' : 'w-0 p-0'} h-screen z-40`}>
                     {open && <div className="absolute left-[-50px] top-2 border p-1 rounded-md cursor-pointer" onClick={() => setOpen(false)}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5 text-white">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />

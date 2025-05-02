@@ -54,10 +54,10 @@ const App = () => {
       }}></div>
       <SideBar />
       <Main />
-      <div className={`open-door fixed top-0 left-0 h-screen bg-white w-1/2 ${refreshWidth ? 'refresh-width' : ''}`}></div>
-      <div className={`open-door fixed top-0 right-0 h-screen bg-white w-1/2 ${refreshWidth ? 'refresh-width' : ''}`}></div>
-      {!refreshWidth && <div className={`center-line fixed bottom-1/2 left-1/2 w-[1px] bg-black ${refresLine ? 'h-[50vh] top-0' : 'top-1/2 h-[0vh]'}`}></div>}
-      {!refreshWidth && <div className={`center-line fixed top-1/2 left-1/2 w-[1px] bg-black ${refresLine ? 'h-[50vh] bottom-0' : 'h-[0vh]'}`}></div>}
+      <div className={`open-door fixed top-0 left-0 h-screen bg-white w-1/2 z-60 ${refreshWidth ? 'refresh-width' : ''}`}></div>
+      <div className={`open-door fixed top-0 right-0 h-screen bg-white w-1/2 z-60 ${refreshWidth ? 'refresh-width' : ''}`}></div>
+      {!refreshWidth && <div className={`center-line fixed bottom-1/2 left-1/2 w-[1px] bg-black z-70 ${refresLine ? 'h-[50vh] top-0' : 'top-1/2 h-[0vh]'}`}></div>}
+      {!refreshWidth && <div className={`center-line fixed top-1/2 left-1/2 w-[1px] bg-black z-70 ${refresLine ? 'h-[50vh] bottom-0' : 'h-[0vh]'}`}></div>}
     </div>
   );
 }
